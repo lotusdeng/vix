@@ -1,0 +1,36 @@
+{
+	"name": "vix",
+	"targetType": "library",
+	"authors": [
+		"lotus"
+	],
+	"sourcePaths": [
+		"deimos"
+	],
+	"sourceFiles-windows-x86": [
+		"lib/win-i386/VixAllProductsDyn.lib"
+	],
+	"sourceFiles-windows-x86_64": [
+		"lib/win-amd64/Vix64AllProductsDyn.lib"
+	],
+	"copyFiles-windows-x86":[
+		"lib/win-i386/VixAllProductsDyn.dll"
+	],
+	"configurations": [
+		{
+			"name": "library",
+			"targetType": "library"
+		},
+		{
+			"name": "demo",
+			"targetName": "vixdemo",
+			"targetType": "executable",
+			"sourcePaths": [
+				"examples"
+			]
+		}
+	],
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2017, lotus",
+	"license": "proprietary"
+}
