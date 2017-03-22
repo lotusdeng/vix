@@ -30,7 +30,7 @@
 			]
 		}
 	],
-	"description": "A minimal D application.",
+	"description": "vmware vix library for D interface",
 	"copyright": "Copyright © 2017, lotus",
 	"license": "proprietary"
 }
