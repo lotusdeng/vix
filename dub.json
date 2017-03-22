@@ -1,20 +1,19 @@
 {
-	"name": "vix",
-	"targetType": "library",
+	"copyFiles-windows-x86": [
+		"lib/win-i386/VixAllProductsDyn.dll"
+	],
 	"authors": [
 		"lotus"
 	],
+	"importPaths": [
+		"."
+	],
+	"description": "vmware vix library for D interface",
+	"name": "vix",
+	"version": "1.14.2",
+	"license": "proprietary",
 	"sourcePaths": [
 		"deimos"
-	],
-	"sourceFiles-windows-x86": [
-		"lib/win-i386/VixAllProductsDyn.lib"
-	],
-	"sourceFiles-windows-x86_64": [
-		"lib/win-amd64/Vix64AllProductsDyn.lib"
-	],
-	"copyFiles-windows-x86":[
-		"lib/win-i386/VixAllProductsDyn.dll"
 	],
 	"configurations": [
 		{
@@ -23,14 +22,19 @@
 		},
 		{
 			"name": "demo",
-			"targetName": "vixdemo",
 			"targetType": "executable",
+			"targetName": "vixdemo",
 			"sourcePaths": [
 				"examples"
 			]
 		}
 	],
-	"description": "vmware vix library for D interface",
-	"copyright": "Copyright © 2017, lotus",
-	"license": "proprietary"
+	"sourceFiles-windows-x86": [
+		"lib/win-i386/VixAllProductsDyn.lib"
+	],
+	"targetType": "library",
+	"sourceFiles-windows-x86_64": [
+		"lib/win-amd64/Vix64AllProductsDyn.lib"
+	],
+	"copyright": "Copyright © 2017, lotus"
 }
